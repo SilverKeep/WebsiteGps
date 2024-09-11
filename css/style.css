@@ -52,13 +52,3 @@
     font-size: 1rem;
     }
     
-    #intro {
-        background-image: url(pinkbg.jpg);
-        background-repeat: round;
-        }
-        #about{
-        background-color: bisque;
-        }
-        #contact{
-        background-color: blanchedalmond;
-        }
