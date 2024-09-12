@@ -1,9 +1,9 @@
-var express = require('express'); 
-var app = express()
-  , server = require('http').createServer(app)
-  , io = io.listen(server);
-
-app.get('/', function(req, res) {
-  res.sendfile('./public/index.html');
-});
-server.listen(80);
+const express = require('express'); 
+const app = express(); 
+const path = require('path'); 
+const router = express.Router(); 
+// Setup essential routes 
+router.get('/', function(req, res) { 
+    res.sendFile(path.join(__dirname + '/index.html')); 
+    //__dirname : It will resolve to your project folder. 
+}); 
