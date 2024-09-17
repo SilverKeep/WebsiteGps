@@ -1,7 +1,14 @@
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 3000
-const hostName = 'monkfish-app-xmvp8.ondigitalocean.app';
 
+const express = require('express');
+const app = express();
+const port = 5000;
 
-app.listen(port, hostName, () => console.log(`Server running at http://${hostName}:${port}/`))
+app.use(express.static(__dirname + '/public'));
+
+app.get("/", (req, res) => {
+    res.sendFile('index.html', {root: __dirname});
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+});
