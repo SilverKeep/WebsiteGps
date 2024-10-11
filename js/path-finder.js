@@ -51,10 +51,10 @@ export function pathFinder(num_nodes, start_node, end_node) {
     }
 
     // Output the final distances and paths (similar to how C++ does it)
-    for (let i = 1; i <= num_nodes; i++) {
-        const pathNodes = path.get(i).join(' ');
-        console.log(`${i} (${distances[i]}): ${pathNodes}`);
-    }
+    // for (let i = 1; i <= num_nodes; i++) {
+    //     const pathNodes = path.get(i).join(' ');
+    //     console.log(`${i} (${distances[i]}): ${pathNodes}`);
+    // }
     const pathNodes = path.get(end_node).join(' ');
-    console.log(`${end_node} (${distances[end_node]}): ${pathNodes}`);
+    return `${end_node} (${distances[end_node]}): ${pathNodes}`;
 }

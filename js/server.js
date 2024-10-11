@@ -15,7 +15,9 @@ var queue = [];
 function processQueue() {
     if (queue.length > 0) {
         const [local_from, local_to] = queue.shift();
-        pathFinder(5, local_from, local_to);
+        
+        var out = document.getElementById('output');
+        out.innerHTML = pathFinder(5, local_from, local_to);
     }
 
     requestAnimationFrame(processQueue);
