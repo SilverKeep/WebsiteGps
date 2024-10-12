@@ -1,42 +1,35 @@
 {
-        "name": "my-project",
-        "version": "1.5.0",
-        "description": "Express server project using compression",
-        "main": "src/index.js",
-        "scripts": {
-                "start": "node index.js",
-                "dev": "nodemon",
-                "lint": "eslint **/*.js"
-        },
-        "dependencies": {
-                "compression": "~1.7.4",
-                "express": "^5.0.0"
-        },
-        "devDependencies": {
-                "eslint": "^5.16.0",
-                "nodemon": "^3.1.4"
-        },
-        "repository": {
-                "type": "git",
-                "url": "git+https://github.com/osiolabs/example.git"
-        },
-        "author": "Chris Lee",
-        "contributors": [
-                {
-                        "name": "Noone else",
-                        "email": "leechris0142@students.esuhsd.org",
-                        "url": "n/a"
-                }
-        ],
-        "keywords": [
-                "server",
-                "osiolabs",
-                "express",
-                "compression"
-        ],
-        "license": "ISC",
-        "bugs": {
-                "url": "https://github.com/osiolabs/example/issues"
-        },
-        "homepage": "https://github.com/osiolabs/example#readme"
+    "name": "website-gps",
+    "version": "1.5.0",
+    "description": "school map",
+    "main": "src/index.html",
+    "type": "module",
+    "dependencies": {
+            "compression": "~1.7.4",
+            "express": "^5.0.0"
+    },
+    "devDependencies": {
+            "eslint": "^5.16.0",
+            "nodemon": "^3.1.4"
+    },
+    "repository": {
+            "type": "git",
+            "url": "https://github.com/ImVeryLucky/WebsiteGps"
+    },
+    "author": "Jason Shnaper",
+    "contributors": [
+            {
+                    "name": "Chris Lee",
+                    "email": "leechris0142@students.esuhsd.org",
+                    "link": "N/A"
+            }
+    ],
+    "keywords": [
+            "server",
+            "osiolabs",
+            "express",
+            "compression"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/ImVeryLucky/WebsiteGps"
 }
